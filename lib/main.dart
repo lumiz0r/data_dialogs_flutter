@@ -24,7 +24,7 @@ class _MyCustomFormState extends State<MyCustomForm> {
       context: context,
       builder: (context) {
         return SimpleDialog(
-          title: Text('Simple Dialog Test'),
+          title: const Text('Simple Dialog Test'),
           children: <Widget>[
             SimpleDialogOption(
               onPressed: () {
@@ -76,12 +76,12 @@ class _MyCustomFormState extends State<MyCustomForm> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(text),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               ElevatedButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                child: Text('OK'),
+                child: const Text('OK'),
               ),
             ],
           ),
@@ -114,21 +114,21 @@ class _MyCustomFormState extends State<MyCustomForm> {
             backgroundColor: Colors.blue, // Change button color
             child: const Icon(Icons.text_fields),
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           FloatingActionButton(
             onPressed: showSimpleDialog,
             tooltip: 'Mostrar Simple Dialog',
             backgroundColor: Colors.green, // Change button color
             child: const Icon(Icons.add),
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           FloatingActionButton(
             onPressed: showSnackBar,
             tooltip: 'Mostrar SnackBar',
             backgroundColor: Colors.red, // Change button color
             child: const Icon(Icons.message),
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           FloatingActionButton(
             onPressed: showBottomSheet,
             tooltip: 'Mostrar Bottom Sheet',
